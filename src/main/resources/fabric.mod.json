@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "vekquickturn",
+  "version": "${version}",
+  "name": "VekQuickTurn",
+  "description": "Pressing a configurable key will make the player do a 180",
+  "authors": [
+    "Endode"
+  ],
+  "contributors": [],
+  "contact": {
+    "homepage": "https://endode.gitlab.io/",
+    "sources": "https://gitlab.com/vekwrite/quickturnmod"
+  },
+  "license": "MIT",
+  "icon": "assets/vekquickturn/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.vekwrite.quickturn.QuickTurn"
+    ],
+    "client": [
+      "com.vekwrite.quickturn.Client.QuickTurnClient"
+    ],
+    "server": [],
+    "modmenu": [ "com.vekwrite.quickturn.ModMenuApiImpl" ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "fabric-key-binding-api-v1": "*",
+    "cloth-config2": ">=5.0.0"
+  }
+}
